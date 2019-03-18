@@ -38,8 +38,6 @@ public class CategoryAdapter extends FragmentPagerAdapter {
             return new NotreDameCathedralFragment();
         } else if (position == 2){
             return new PalaceVersaillesFragment();
-        } else if (position == 3){
-            return new ChampsElyseesFragment();
         } else {
             return new LouvreMuseumFragment();
         }
@@ -48,7 +46,7 @@ public class CategoryAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 5;
+        return 4;
     }
 
 
@@ -60,8 +58,6 @@ public class CategoryAdapter extends FragmentPagerAdapter {
             return mContext.getString(R.string.category_notre_dame);
         } else if (position == 2) {
             return mContext.getString(R.string.category_versailles);
-        } else if (position == 3) {
-            return mContext.getString(R.string.category_elysees);
         } else {
             return mContext.getString(R.string.category_louvre);
         }

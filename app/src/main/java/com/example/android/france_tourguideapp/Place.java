@@ -22,6 +22,9 @@ package com.example.android.france_tourguideapp;
         /** String resource ID for the place description*/
         private String mPlaceLocation;
 
+        /** String resource ID for the website link */
+        private String mWebsiteLink;
+
 
         /**
          * Create a new Place object.
@@ -30,17 +33,19 @@ package com.example.android.france_tourguideapp;
          * @param priceInformation is about prices to get access into place
          * @param openingTime is about opening times to visit the place
          * @param placeLocation all information about how get there
-         *
+         * @param websiteLink for redirecto to place website
+
          */
 
 
-        public Place (String placeDescription, int placeImageId, String priceInformation, String openingTime, String placeLocation) {
+        public Place (String placeDescription, int placeImageId, String priceInformation, String openingTime, String placeLocation, String websiteLink) {
 
             mPlaceDescription = placeDescription;
             mPlaceImageId = placeImageId;
             mPriceInformation = priceInformation;
             mOpeningTime = openingTime;
             mPlaceLocation = placeLocation;
+            mWebsiteLink = websiteLink;
 
 
         }
@@ -80,4 +85,12 @@ package com.example.android.france_tourguideapp;
         public String getPlaceLocation() {
             return mPlaceLocation;
         }
+
+        /**
+         * Open website of the place to visit.
+         */
+        public String getWebsiteLink() {
+            return mWebsiteLink;
+        }
+
     }

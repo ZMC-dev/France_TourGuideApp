@@ -5,20 +5,16 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!-- Category name for phrases [CHAR LIMIT=20] -->
-    <string name="category_eiffel">Eiffel Tower</string>
+    <string name="category_eiffel">Tour Eiffel</string>
 
     <!-- Category name for the vocabulary places for colors [CHAR LIMIT=20] -->
-    <string name="category_louvre">Louvre Museum</string>
-
-    <!-- Category name for the vocabulary places for numbers [CHAR LIMIT=20] -->
-    <string name="category_elysees">Champs Elysees</string>
+    <string name="category_louvre">Musée Louvre</string>
 
     <!-- Category name for the vocabulary places for family members [CHAR LIMIT=20] -->
-    <string name="category_versailles">Versailles Palace</string>
+    <string name="category_versailles">Château de Versailles</string>
 
     <!-- Category name for the vocabulary places for family members [CHAR LIMIT=20] -->
-    <string name="category_notre_dame">Notre-Dame Cathedral</string>
-
+    <string name="category_notre_dame">Cathedral Nôtre-Dame</string>
 
 
 </resources>

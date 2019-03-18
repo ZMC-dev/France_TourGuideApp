@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -72,9 +73,13 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
 
         // Find the TextView in the list_item.xml layout with the ID times_text_view.
         TextView locationTextView = (TextView) listItemView.findViewById(R.id.location_text_view);
-        // Get the information about opening times of this place
+        // Get the information about location of this place
         locationTextView.setText(currentPlace.getPlaceLocation());
 
+        // Find the TextView in the list_item.xml layout with the ID times_text_view.
+        TextView website = (TextView) listItemView.findViewById(R.id.website_text_view);
+        // Get the information about website of this place
+        website.setText(currentPlace.getWebsiteLink());
 
         // Set the theme color for the list item
         View textContainer = listItemView.findViewById(R.id.text_container);
