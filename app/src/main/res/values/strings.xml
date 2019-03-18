@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">France_TourGuideApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Category name for phrases [CHAR LIMIT=20] -->
+    <string name="category_eiffel">Eiffel Tower</string>
+
+    <!-- Category name for the vocabulary places for colors [CHAR LIMIT=20] -->
+    <string name="category_louvre">Louvre Museum</string>
+
+    <!-- Category name for the vocabulary places for numbers [CHAR LIMIT=20] -->
+    <string name="category_elysees">Champs Elysees</string>
+
+    <!-- Category name for the vocabulary places for family members [CHAR LIMIT=20] -->
+    <string name="category_versailles">Versailles Palace</string>
+
+    <!-- Category name for the vocabulary places for family members [CHAR LIMIT=20] -->
+    <string name="category_notre_dame">Notre-Dame Cathedral</string>
+
+
+
+</resources>
