@@ -45,11 +45,19 @@ public class PalaceVersaillesFragment extends Fragment {
                 "Website : http://www.chateauversailles.fr/"));
 
 
+
+        // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.place_list, container, false);
 
-        ListView listView = (ListView)rootView.findViewById(R.id.list);
 
-        listView.setAdapter(new PlaceAdapter(getActivity(),places, R.color.category_background));
+        // Get a reference to the ListView, and attach the adapter to the listView.
+        ListView listView = (ListView) rootView.findViewById(R.id.list);
+
+
+        // Create an {@link PlaceAdapter}, whose data source is a list of
+        // {@link Place}. The adapter knows how to create list item views for each item
+        // in the list.
+        listView.setAdapter(new PlaceAdapter(getActivity(), places, R.color.category_background));
 
         return rootView;
     }

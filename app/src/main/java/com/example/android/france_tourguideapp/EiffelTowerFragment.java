@@ -21,7 +21,6 @@ import java.util.ArrayList;
  */
 public class EiffelTowerFragment extends Fragment {
 
-TextView website;
 
     public EiffelTowerFragment() {
         // Required empty public constructor
@@ -32,8 +31,7 @@ TextView website;
                              Bundle savedInstanceState) {
 
 
-        // Inflate the layout for this fragment
-
+        // Arraylist for a list of place elements
         ArrayList<Place> places = new ArrayList<Place>();
         places.add(new Place("La tour Eiffel est une tour de fer puddlé de 324 mètres de hauteur (avec antennes)o 1 située à Paris, à l’extrémité nord-ouest du parc du Champ-de-Mars en bordure de la Seine dans le 7e arrondissement.\n Construite par Gustave Eiffel et ses collaborateurs pour l’Exposition universelle de Paris de 1889, et initialement nommée « tour de 300 mètres », ce monument est devenu le symbole de la capitale française, et un site touristique de premier plan : il s’agit du second site culturel français payant le plus visité en 2011, avec 7,1 millions de visiteurs dont 75 % d'étrangers en 2011",
                 R.drawable.eiffel,
@@ -42,14 +40,22 @@ TextView website;
                 "Adresse :\nChamp de Mars, 5 Avenue Anatole France, 75007 Paris",
                 "Website : www.toureiffel.paris/fr"));
 
+        // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.place_list, container, false);
 
+
+        // Get a reference to the ListView, and attach the adapter to the listView.
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
+
+        // Create an {@link PlaceAdapter}, whose data source is a list of
+        // {@link Place}. The adapter knows how to create list item views for each item
+        // in the list.
         listView.setAdapter(new PlaceAdapter(getActivity(), places, R.color.category_background));
+
 
         return rootView;
 
     }
-    
+
 }

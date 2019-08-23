@@ -71,12 +71,12 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
         timesTextView.setText(currentPlace.getOpeningTime());
 
 
-        // Find the TextView in the list_item.xml layout with the ID times_text_view.
+        // Find the TextView in the list_item.xml layout with the ID location_text_view.
         TextView locationTextView = (TextView) listItemView.findViewById(R.id.location_text_view);
         // Get the information about location of this place
         locationTextView.setText(currentPlace.getPlaceLocation());
 
-        // Find the TextView in the list_item.xml layout with the ID times_text_view.
+        // Find the TextView in the list_item.xml layout with the ID website_text_view.
         TextView website = (TextView) listItemView.findViewById(R.id.website_text_view);
         // Get the information about website of this place
         website.setText(currentPlace.getWebsiteLink());
